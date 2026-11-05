@@ -1,0 +1,39 @@
+\begin{table}[ht]
+\centering
+\caption{2025 extension on the full \RNTags-tag panel. Panel A re-estimates eq.~(\ref{eq:ddd}) on the portion of the extended panel that coincides with the main window, on the full extended panel, on the extended panel excluding advanced\_architecture cells, and on funnel-qualified posts in the extended panel. Panel B reports the post-period event-study coefficients of the extended panel for every complete 13-week bin (event time and dates); they are estimated on the full extended panel and so differ slightly from the main-window coefficients of Figure~\ref{fig:event_study}. Panel C reports the persistence of the tag-level decline in upvoted posts from 2024 into 2025.}
+\label{tab:extension_2025}
+\small
+\begin{tabular}{lrr}
+\toprule
+\multicolumn{3}{l}{\emph{Panel A. Triple difference, full \RNTags-tag panel}} \\
+\midrule
+ & $\hat\beta_{\text{DDD}}$ & $p$ \\
+\midrule
+Main-window portion (2020-01-06 to 2025-01-05) & \RGateB & \RGatePv \\
+Full extended panel (to 2025-12-28) & \RExtFullB & \RExtFullPv \\
+Extended panel, excluding advanced\_architecture cells & \RExtNoAAB & \RExtNoAAPv \\
+Extended panel, funnel-qualified posts & \RExtFunQualB & \RExtFunQualPv \\
+\midrule
+\multicolumn{3}{l}{\emph{Panel B. Event-study coefficients, complete post-period bins}} \\
+\midrule
+Event time & Dates & Coefficient \\
+\midrule
+T$+$0 & 2022-12-05 to 2023-03-05 & \RTExtBinZeroB \\
+T$+$1 & 2023-03-06 to 2023-06-04 & \RTExtBinOneB \\
+T$+$2 & 2023-06-05 to 2023-09-03 & \RTExtBinTwoB \\
+T$+$3 & 2023-09-04 to 2023-12-03 & \RTExtBinThreeB \\
+T$+$4 & 2023-12-04 to 2024-03-03 & \RTExtBinFourB \\
+T$+$5 & 2024-03-04 to 2024-06-02 & \RTExtBinFiveB \\
+T$+$6 & 2024-06-03 to 2024-09-01 & \RTExtBinSixB \\
+T$+$7 & 2024-09-02 to 2024-12-01 & \RTExtBinSevenB \\
+T$+$8 & 2024-12-02 to 2025-03-02 & \RTExtBinEightB \\
+T$+$9 & 2025-03-03 to 2025-06-01 & \RTExtBinNineB \\
+T$+$10 & 2025-06-02 to 2025-08-31 & \RTExtBinOneZeroB \\
+T$+$11 & 2025-09-01 to 2025-11-30 & \RTExtBinOneOneB \\
+\midrule
+\multicolumn{3}{l}{\emph{Panel C. Monitor persistence on 2025 data}} \\
+\midrule
+Spearman (decline in upvoted posts, 2024 and 2025) & \RPersistRho & \RPersistP \\
+\bottomrule
+\end{tabular}
+\end{table}

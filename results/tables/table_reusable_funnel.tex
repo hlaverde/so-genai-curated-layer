@@ -1,0 +1,21 @@
+\begin{table}[ht]
+\centering
+\caption{Triple-difference (DDD) estimates across the observed support-post funnel, by PPML on $Y$, the cell count of question--tag pairs at each stage. Coefficients on $\text{AI}_t\cdot\text{Post}_w\cdot\text{Sub}_k$ with tag-clustered standard errors. The implied shortfall, in question--tag pairs, is $\sum_{\text{post}}(Y e^{-\hat\beta\,(\text{AI}-\text{AI}_{\text{ref}})\cdot\text{Sub}}-Y)$, where $\text{AI}_{\text{ref}}$ is the index of the reference tag, \RRefTag, the tag closest to the 10th percentile of the tag index. $\hat\gamma_3$ is the coefficient on $\text{Post}_w\cdot\text{Sub}_k$, the post-period change in the gap between substitutable and non-substitutable types within a tag at the zero of the tag index (its mean across tags), with its tag-clustered $p$-value.}
+\label{tab:reusable_funnel}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Funnel stage & $\hat\beta_{\text{DDD}}$ & SE & $p$ & 95\% CI & N cells & $\hat\gamma_3$ & $p(\hat\gamma_3)$ & Implied shortfall (pairs) \\
+\midrule
+Questions & \RTFunQuestionsB & \RTFunQuestionsSE & \RTFunQuestionsP & [\RTFunQuestionsLo, \RTFunQuestionsHi] & \RTFunQuestionsN & \RTFunQuestionsGThree & \RTFunQuestionsGThreeP & \RTFunQuestionsShort \\
+Answered & \RTFunAnsweredB & \RTFunAnsweredSE & \RTFunAnsweredP & [\RTFunAnsweredLo, \RTFunAnsweredHi] & \RTFunAnsweredN & \RTFunAnsweredGThree & \RTFunAnsweredGThreeP & \RTFunAnsweredShort \\
+Accepted answer & \RTFunAcceptedAnswerB & \RTFunAcceptedAnswerSE & \RTFunAcceptedAnswerP & [\RTFunAcceptedAnswerLo, \RTFunAcceptedAnswerHi] & \RTFunAcceptedAnswerN & \RTFunAcceptedAnswerGThree & \RTFunAcceptedAnswerGThreeP & \RTFunAcceptedAnswerShort \\
+Accepted, not closed & \RTFunAcceptedNotClosedB & \RTFunAcceptedNotClosedSE & \RTFunAcceptedNotClosedP & [\RTFunAcceptedNotClosedLo, \RTFunAcceptedNotClosedHi] & \RTFunAcceptedNotClosedN & \RTFunAcceptedNotClosedGThree & \RTFunAcceptedNotClosedGThreeP & \RTFunAcceptedNotClosedShort \\
+Accepted, score $\geq 0$ & \RTFunAcceptedScoreGeqZeroB & \RTFunAcceptedScoreGeqZeroSE & \RTFunAcceptedScoreGeqZeroP & [\RTFunAcceptedScoreGeqZeroLo, \RTFunAcceptedScoreGeqZeroHi] & \RTFunAcceptedScoreGeqZeroN & \RTFunAcceptedScoreGeqZeroGThree & \RTFunAcceptedScoreGeqZeroGThreeP & \RTFunAcceptedScoreGeqZeroShort \\
+Funnel-qualified post & \RTFunFunnelQualifiedPostB & \RTFunFunnelQualifiedPostSE & \RTFunFunnelQualifiedPostP & [\RTFunFunnelQualifiedPostLo, \RTFunFunnelQualifiedPostHi] & \RTFunFunnelQualifiedPostN & \RTFunFunnelQualifiedPostGThree & \RTFunFunnelQualifiedPostGThreeP & \RTFunFunnelQualifiedPostShort \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

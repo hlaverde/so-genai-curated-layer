@@ -1,0 +1,18 @@
+\begin{table}[ht]
+\centering
+\caption{Tag-level correlation between the embedding-based answerability score and the tag-index variants.}
+\label{tab:embedding_validation}
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lrrr}
+\toprule
+Index & Pearson $r$ & $p$ & Spearman $\rho$ \\
+\midrule
+Tag index & \RTEmbVTagIndexPearson & \RTEmbVTagIndexPearsonP & \RTEmbVTagIndexSpearman \\
+Variant: z-score composite index & \RTEmbVVariantZScoreCompositeIndexPearson & \RTEmbVVariantZScoreCompositeIndexPearsonP & \RTEmbVVariantZScoreCompositeIndexSpearman \\
+Variant: PCA composite index & \RTEmbVVariantPCACompositeIndexPearson & \RTEmbVVariantPCACompositeIndexPearsonP & \RTEmbVVariantPCACompositeIndexSpearman \\
+Variant: quartile rank index & \RTEmbVVariantQuartileRankIndexPearson & \RTEmbVVariantQuartileRankIndexPearsonP & \RTEmbVVariantQuartileRankIndexSpearman \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

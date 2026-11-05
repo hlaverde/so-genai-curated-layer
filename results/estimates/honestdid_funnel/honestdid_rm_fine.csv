@@ -1,0 +1,7 @@
+"Mbar","lb","ub","contains"
+0.625,Inf,-Inf,FALSE
+0.685,Inf,-Inf,FALSE
+0.715,-0.002,0.002,TRUE
+0.7,-0.002,-0.00164,FALSE
+0.705,-0.002,-0.00036,FALSE
+0.71,-0.002,0.00092,TRUE

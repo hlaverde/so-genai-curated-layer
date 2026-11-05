@@ -1,0 +1,20 @@
+\begin{table}[ht]
+\centering
+\caption{Inference for the two central coefficients of eq.~(\ref{eq:ddd}), with the pre-ChatGPT tag index and with the embedding-based answerability score as the treatment intensity. The tag index is a mean of $z$-scores and is not re-standardized, so its coefficients are per unit of the index; the embedding score is standardized, so its coefficients are per standard deviation, and the two panels are on different scales. CR1: standard errors clustered by tag; score bootstrap: Kline--Santos with \RKSReps{} Rademacher draws and the null imposed; CR3: leave-one-tag-out jackknife. The last two columns re-estimate the model without python and give the range of the \RNTags{} leave-one-tag-out estimates.}
+\label{tab:inference}
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Coefficient & $\hat\beta_{\text{DDD}}$ & 95\% CI (CR1) & $p$ CR1 & $p$ score bootstrap & SE CR3 & $p$ CR3 & Without python & Leave-one-out range \\
+\midrule
+\multicolumn{9}{l}{\emph{Pre-ChatGPT tag index (resolution and activity)}} \\
+Question volume & \RBaseB & [\RBaseLo, \RBaseHi] & \RBasePv & \RKSQPv & \RBaseCRThreeSE & \RBaseCRThreePv & \RNoPythonQB & [\RLooAllQMin, \RLooAllQMax] \\
+Funnel-qualified posts & \RFunQualB & [\RFunQualLo, \RFunQualHi] & \RFunQualPv & \RKSQualPv & \RQualCRThreeSE & \RQualCRThreePv & \RNoPythonQualB & [\RLooAllQualMin, \RLooAllQualMax] \\
+\multicolumn{9}{l}{\emph{Embedding-based answerability score}} \\
+Question volume & \REmbDDDB & [\REmbDDDLo, \REmbDDDHi] & \REmbDDDPv & \RKSEmbQPv & \REmbQCRThreeSE & \REmbQCRThreePv & \RNoPythonEmbQB & [\RLooAllEmbQMin, \RLooAllEmbQMax] \\
+Funnel-qualified posts & \REmbQualB & [\REmbQualLo, \REmbQualHi] & \REmbQualPv & \RKSEmbQualPv & \REmbQualCRThreeSE & \REmbQualCRThreePv & \RNoPythonEmbQualB & [\RLooAllEmbQualMin, \RLooAllEmbQualMax] \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

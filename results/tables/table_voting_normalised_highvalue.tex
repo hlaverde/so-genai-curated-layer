@@ -1,0 +1,17 @@
+\begin{table}[ht]
+\centering
+\caption{Funnel-qualified posts above each score threshold after rescaling post-period scores by each tag's pre/post ratio of mean absolute score (ratio clipped to $[0.5,3]$); PPML, as in eq.~(\ref{eq:ddd}).}
+\label{tab:voting_normalised}
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lrrrrr}
+\toprule
+Outcome & $\hat\beta$ & SE & $p$ & 95\% CI & Posts \\
+\midrule
+score $\geq$ 1 (voting-normalized) & \RTVNScoreGeqOneVotingNormalizedBeta & \RTVNScoreGeqOneVotingNormalizedSe & \RTVNScoreGeqOneVotingNormalizedP & [\RTVNScoreGeqOneVotingNormalizedLo, \RTVNScoreGeqOneVotingNormalizedHi] & \RTVNScoreGeqOneVotingNormalizedPosts \\
+score $\geq$ 2 (voting-normalized) & \RTVNScoreGeqTwoVotingNormalizedBeta & \RTVNScoreGeqTwoVotingNormalizedSe & \RTVNScoreGeqTwoVotingNormalizedP & [\RTVNScoreGeqTwoVotingNormalizedLo, \RTVNScoreGeqTwoVotingNormalizedHi] & \RTVNScoreGeqTwoVotingNormalizedPosts \\
+score $\geq$ 5 (voting-normalized) & \RTVNScoreGeqFiveVotingNormalizedBeta & \RTVNScoreGeqFiveVotingNormalizedSe & \RTVNScoreGeqFiveVotingNormalizedP & [\RTVNScoreGeqFiveVotingNormalizedLo, \RTVNScoreGeqFiveVotingNormalizedHi] & \RTVNScoreGeqFiveVotingNormalizedPosts \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

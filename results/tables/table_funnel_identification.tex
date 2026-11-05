@@ -1,0 +1,34 @@
+\begin{table}[ht]
+\centering
+\caption{Identification diagnostics for the funnel-qualified count, with the specification used for question volume: date placebos on the pre-ChatGPT sample (Panel A), the PPML event study (Panel B; Figure~\ref{fig:event_study_funnel}) and HonestDiD bounds for $\theta$, the average of its complete post-period coefficients (Panel C). A breakdown value is the first value whose robust confidence set contains zero, on a grid of step \RHDBreakdownStep{} for $\bar M$ (with a $\theta$ grid of step \RHDThetaGridStep{}) and \RHDSDBreakdownStep{} for $M$.}
+\label{tab:funnel_identification}
+\small
+\begin{tabular}{lrrr}
+\toprule
+\multicolumn{4}{l}{\emph{Panel A. Date placebos}} \\
+\midrule
+Cutoff & $\hat\beta$ & SE & $p$ \\
+\midrule
+2020-05-30 & \RTQIPlacZeroB & \RTQIPlacZeroSE & \RTQIPlacZeroP \\
+2020-11-30 & \RTQIPlacOneB & \RTQIPlacOneSE & \RTQIPlacOneP \\
+2021-05-30 & \RTQIPlacTwoB & \RTQIPlacTwoSE & \RTQIPlacTwoP \\
+2021-11-30 & \RTQIPlacThreeB & \RTQIPlacThreeSE & \RTQIPlacThreeP \\
+2022-05-30 & \RTQIPlacFourB & \RTQIPlacFourSE & \RTQIPlacFourP \\
+2022-06-21 (Copilot GA) & \RTQIPlacFiveB & \RTQIPlacFiveSE & \RTQIPlacFiveP \\
+\midrule
+\multicolumn{4}{l}{\emph{Panel B. Event study}} \\
+\midrule
+Mean of the complete pre-period bins & \RQualESPreMean & & \\
+Mean of the complete post-period bins ($\theta$) & \RQualESPostMean & & \\
+Range of the post-period bins & [\RQualESPostMin, \RQualESPostMax] & & \\
+Joint test of the pre-period bins & & & \RQualESPreJointP \\
+\midrule
+\multicolumn{4}{l}{\emph{Panel C. HonestDiD}} \\
+\midrule
+$\theta$, 95\% CI & \RQualHDTheta & \multicolumn{2}{r}{[\RQualHDOrigLo, \RQualHDOrigHi]} \\
+$\Delta^{\text{RM}}$ breakdown $\bar M$ & \RQualHDBreakdown & & \\
+FLCI, linear trend ($M=0$) & \RQualHDSDCenterZero & \multicolumn{2}{r}{[\RQualHDSDLoZero, \RQualHDSDHiZero]} \\
+$\Delta^{\text{SD}}$ breakdown $M$ & \RQualHDSDBreakdown & & \\
+\bottomrule
+\end{tabular}
+\end{table}

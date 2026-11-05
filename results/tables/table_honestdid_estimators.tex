@@ -1,0 +1,24 @@
+\begin{table}[ht]
+\centering
+\caption{HonestDiD for two estimators of each outcome, both measured against bin $-1$ on the complete event-study bins: $\theta$, the equal-weighted average of the post-period coefficients, and $\theta_\beta$, the same coefficients with the post-period weights that approximately reproduce $\beta_{\text{DDD}}$, rescaled to sum to one over the complete bins. $\beta_{\text{DDD}}$ itself also weights the pre-period coefficients, so it is not equal to $\theta_\beta$. A breakdown value is the first value whose robust confidence set contains zero, on a grid of step \RHDBreakdownStep{} for $\bar M$ (with a $\theta$ grid of step \RHDThetaGridStep{}) and \RHDSDBreakdownStep{} for $M$. The 95\% CI of the estimates uses $t(\RClusterDf)$; the robust sets use the normal reference of the package.}
+\label{tab:honestdid_estimators}
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lrrrr}
+\toprule
+& \multicolumn{2}{c}{Question volume} & \multicolumn{2}{c}{Funnel-qualified} \\
+& $\theta$ & $\theta_\beta$ & $\theta$ & $\theta_\beta$ \\
+\midrule
+Estimate & \RHDTheta & \RHDBTheta & \RQualHDTheta & \RQualHDBTheta \\
+95\% CI & [\RHDOrigLo, \RHDOrigHi] & [\RHDBOrigLo, \RHDBOrigHi] & [\RQualHDOrigLo, \RQualHDOrigHi] & [\RQualHDBOrigLo, \RQualHDBOrigHi] \\
+$\Delta^{\text{RM}}$ breakdown $\bar M$ & \RHDBreakdown & \RHDBBreakdown & \RQualHDBreakdown & \RQualHDBBreakdown \\
+FLCI, linear trend ($M=0$) & \RHDSDCenterZero & \RHDBSDCenterZero & \RQualHDSDCenterZero & \RQualHDBSDCenterZero \\
+95\% CI & [\RHDSDLoZero, \RHDSDHiZero] & [\RHDBSDLoZero, \RHDBSDHiZero] & [\RQualHDSDLoZero, \RQualHDSDHiZero] & [\RQualHDBSDLoZero, \RQualHDBSDHiZero] \\
+$\Delta^{\text{SD}}$ breakdown $M$ & \RHDSDBreakdown & \RHDBSDBreakdown & \RQualHDSDBreakdown & \RQualHDBSDBreakdown \\
+$\beta_{\text{DDD}}$ approximately reproduced from all the weights & & \RHDBRepro & & \RQualHDBRepro \\
+Post-period weight on $T{+}0$; $T{+}7$ (\%) & & \RHDBWeightFirst; \RHDBWeightLast & & \RQualHDBWeightFirst; \RQualHDBWeightLast \\
+Weight on the partial bin $T{+}8$ (\%) & & \RHDBPartialShare & & \RQualHDBPartialShare \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

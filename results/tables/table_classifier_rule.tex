@@ -1,0 +1,19 @@
+\begin{table}[!htbp]
+\centering
+\caption{Question-type classification rule, written from the code of the pipeline. A question takes the first type, in this order, whose rule it meets. Regular expressions are matched on the title, ignoring case, after removing zero-width characters (U+200B, U+200C, U+200D, U+2060, U+FEFF). A question has code when its body contains a \texttt{<code>} element; body length is in characters, HTML included. Sub is the substitutability label of eq.~(\ref{eq:ddd}).}
+\label{tab:classifier_rule}
+\footnotesize
+\begin{tabular}{rlcp{7.9cm}}
+\toprule
+Order & Question type & Sub & Rule \\
+\midrule
+1 & \texttt{version\_environment\_specific} & 0 & \texttt{\textbackslash{}b(?:version|\allowbreak{}environment|\allowbreak{}windows|\allowbreak{}linux|\allowbreak{}mac|\allowbreak{}ubuntu|\allowbreak{}install|\allowbreak{}installed|\allowbreak{}configuration|\allowbreak{}dependency|\allowbreak{}package|\allowbreak{}build error|\allowbreak{}compiler|\allowbreak{}runtime)\textbackslash{}b} \\
+2 & \texttt{advanced\_architecture} & 0 & \texttt{\textbackslash{}b(?:architecture|\allowbreak{}design pattern|\allowbreak{}scalable|\allowbreak{}performance|\allowbreak{}optimization|\allowbreak{}microservice|\allowbreak{}distributed|\allowbreak{}best practice)\textbackslash{}b} \\
+3 & \texttt{debugging\_simple} & 1 & \texttt{\textbackslash{}b(?:error|\allowbreak{}exception|\allowbreak{}traceback|\allowbreak{}not working|\allowbreak{}bug|\allowbreak{}debug|\allowbreak{}failed|\allowbreak{}failure|\allowbreak{}crash|\allowbreak{}segmentation fault)\textbackslash{}b} \\
+4 & \texttt{how\_to} & 1 & \texttt{\textbackslash{}b(?:how to|\allowbreak{}how do i|\allowbreak{}how can i|\allowbreak{}what is the way|\allowbreak{}how should i)\textbackslash{}b} \\
+5 & \texttt{short\_code} & 1 & Has code, body length $\leq$ \RClassBodyMax{} \\
+6 & \texttt{long\_code} & 1 & Has code, body length $>$ \RClassBodyMax{} \\
+7 & \texttt{other\_conceptual} & 1 & Every other question \\
+\bottomrule
+\end{tabular}
+\end{table}

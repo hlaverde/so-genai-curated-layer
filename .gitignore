@@ -1,0 +1,35 @@
+# Secrets and credentials
+.env
+.env.*
+*.key
+*secret*
+credentials.json
+
+# Python and R environments, tooling caches
+.venv/
+venv/
+env/
+.Rlib/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Raw files and intermediate inputs, regenerated from public sources (see README.md).
+# data/analysis/ is part of this package.
+data/raw/*
+data/processed/*
+!data/**/.gitkeep
+
+# Logs written by the collection scripts
+outputs/
+
+# Archives
+*.zip

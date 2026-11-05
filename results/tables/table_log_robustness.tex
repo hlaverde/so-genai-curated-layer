@@ -1,0 +1,27 @@
+\begin{table}[ht]
+\centering
+\caption{OLS on $\log(1+Y)$ as a robustness check on the PPML estimates. Each row re-estimates eq.~(\ref{eq:ddd}) for a funnel stage, one of the two vote groups of funnel-qualified posts, or one of the score bins of Table~\ref{tab:score_bins} (score 0 is the zero-score vote group), with the same fixed effects and tag clustering; the PPML columns repeat the main estimates.}
+\label{tab:log_robustness}
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lrrrrrr}
+\toprule
+Outcome & PPML $\hat\beta$ & $p$ & $\log(1+Y)$ $\hat\beta$ & SE & $p$ & 95\% CI \\
+\midrule
+Questions & \RTLogRQuestionsPpmlBeta & \RTLogRQuestionsPpmlP & \RTLogRQuestionsBeta & \RTLogRQuestionsSe & \RTLogRQuestionsP & [\RTLogRQuestionsLo, \RTLogRQuestionsHi] \\
+Answered & \RTLogRAnsweredPpmlBeta & \RTLogRAnsweredPpmlP & \RTLogRAnsweredBeta & \RTLogRAnsweredSe & \RTLogRAnsweredP & [\RTLogRAnsweredLo, \RTLogRAnsweredHi] \\
+Accepted answer & \RTLogRAcceptedAnswerPpmlBeta & \RTLogRAcceptedAnswerPpmlP & \RTLogRAcceptedAnswerBeta & \RTLogRAcceptedAnswerSe & \RTLogRAcceptedAnswerP & [\RTLogRAcceptedAnswerLo, \RTLogRAcceptedAnswerHi] \\
+Accepted, not closed & \RTLogRAcceptedNotClosedPpmlBeta & \RTLogRAcceptedNotClosedPpmlP & \RTLogRAcceptedNotClosedBeta & \RTLogRAcceptedNotClosedSe & \RTLogRAcceptedNotClosedP & [\RTLogRAcceptedNotClosedLo, \RTLogRAcceptedNotClosedHi] \\
+Accepted, score $\geq 0$ & \RTLogRAcceptedScoreGeqZeroPpmlBeta & \RTLogRAcceptedScoreGeqZeroPpmlP & \RTLogRAcceptedScoreGeqZeroBeta & \RTLogRAcceptedScoreGeqZeroSe & \RTLogRAcceptedScoreGeqZeroP & [\RTLogRAcceptedScoreGeqZeroLo, \RTLogRAcceptedScoreGeqZeroHi] \\
+Funnel-qualified post & \RTLogRFunnelQualifiedPostPpmlBeta & \RTLogRFunnelQualifiedPostPpmlP & \RTLogRFunnelQualifiedPostBeta & \RTLogRFunnelQualifiedPostSe & \RTLogRFunnelQualifiedPostP & [\RTLogRFunnelQualifiedPostLo, \RTLogRFunnelQualifiedPostHi] \\
+Funnel-qualified, score 0 & \RTLogRFunnelQualifiedScoreZeroPpmlBeta & \RTLogRFunnelQualifiedScoreZeroPpmlP & \RTLogRFunnelQualifiedScoreZeroBeta & \RTLogRFunnelQualifiedScoreZeroSe & \RTLogRFunnelQualifiedScoreZeroP & [\RTLogRFunnelQualifiedScoreZeroLo, \RTLogRFunnelQualifiedScoreZeroHi] \\
+Funnel-qualified, score $\geq 1$ & \RTLogRFunnelQualifiedScoreGeqOnePpmlBeta & \RTLogRFunnelQualifiedScoreGeqOnePpmlP & \RTLogRFunnelQualifiedScoreGeqOneBeta & \RTLogRFunnelQualifiedScoreGeqOneSe & \RTLogRFunnelQualifiedScoreGeqOneP & [\RTLogRFunnelQualifiedScoreGeqOneLo, \RTLogRFunnelQualifiedScoreGeqOneHi] \\
+Funnel-qualified, score 1 & \RTLogRFunnelQualifiedScoreOnePpmlBeta & \RTLogRFunnelQualifiedScoreOnePpmlP & \RTLogRFunnelQualifiedScoreOneBeta & \RTLogRFunnelQualifiedScoreOneSe & \RTLogRFunnelQualifiedScoreOneP & [\RTLogRFunnelQualifiedScoreOneLo, \RTLogRFunnelQualifiedScoreOneHi] \\
+Funnel-qualified, score 2 & \RTLogRFunnelQualifiedScoreTwoPpmlBeta & \RTLogRFunnelQualifiedScoreTwoPpmlP & \RTLogRFunnelQualifiedScoreTwoBeta & \RTLogRFunnelQualifiedScoreTwoSe & \RTLogRFunnelQualifiedScoreTwoP & [\RTLogRFunnelQualifiedScoreTwoLo, \RTLogRFunnelQualifiedScoreTwoHi] \\
+Funnel-qualified, score 3 & \RTLogRFunnelQualifiedScoreThreePpmlBeta & \RTLogRFunnelQualifiedScoreThreePpmlP & \RTLogRFunnelQualifiedScoreThreeBeta & \RTLogRFunnelQualifiedScoreThreeSe & \RTLogRFunnelQualifiedScoreThreeP & [\RTLogRFunnelQualifiedScoreThreeLo, \RTLogRFunnelQualifiedScoreThreeHi] \\
+Funnel-qualified, score 4 & \RTLogRFunnelQualifiedScoreFourPpmlBeta & \RTLogRFunnelQualifiedScoreFourPpmlP & \RTLogRFunnelQualifiedScoreFourBeta & \RTLogRFunnelQualifiedScoreFourSe & \RTLogRFunnelQualifiedScoreFourP & [\RTLogRFunnelQualifiedScoreFourLo, \RTLogRFunnelQualifiedScoreFourHi] \\
+Funnel-qualified, score $\geq 5$ & \RTLogRFunnelQualifiedScoreGeqFivePpmlBeta & \RTLogRFunnelQualifiedScoreGeqFivePpmlP & \RTLogRFunnelQualifiedScoreGeqFiveBeta & \RTLogRFunnelQualifiedScoreGeqFiveSe & \RTLogRFunnelQualifiedScoreGeqFiveP & [\RTLogRFunnelQualifiedScoreGeqFiveLo, \RTLogRFunnelQualifiedScoreGeqFiveHi] \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

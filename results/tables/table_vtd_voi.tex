@@ -1,0 +1,16 @@
+\begin{table}[ht]
+\centering
+\caption{Allocation-margin value of information on upvoted posts on the full \RNTags-tag panel (out of sample). Upvoted posts are funnel-qualified posts with score $\geq1$. A manager allocates an intervention budget $B$ (a fraction of total 2024 weekly activity) to protect the realized 2025 flow of upvoted posts; covering a tag costs its 2024 weekly activity, and each rule ranks tags by its signal per unit of cost. Declines are in weekly levels against the tag's pre-ChatGPT mean. \textbf{Oracle} is the perfect-foresight benchmark, which ranks tags by their realized 2025 loss per unit of cost; \textbf{Value-based} ranks by the observed 2024 decline in weekly upvoted posts; \textbf{Naive} by the 2024 decline in weekly activity; \textbf{Random} averages random orders. Cells are the share of the realized 2025 loss of upvoted posts captured; the regret of a rule is $(\text{Oracle}-\text{rule})/\text{Oracle}$, computed from unrounded shares.}
+\label{tab:vtd_voi}
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+$B$ & Oracle & Value-based & Naive & Random & Regret$_{\text{value}}$ & Regret$_{\text{naive}}$ \\
+\midrule
+\RTVOIBOneZeroBudget\% & \RTVOIBOneZeroOracle & \RTVOIBOneZeroCalibrated & \RTVOIBOneZeroNaive & \RTVOIBOneZeroRandom & \RTVOIBOneZeroRegretCalibrated & \RTVOIBOneZeroRegretNaive \\
+\RTVOIBTwoFiveBudget\% & \RTVOIBTwoFiveOracle & \RTVOIBTwoFiveCalibrated & \RTVOIBTwoFiveNaive & \RTVOIBTwoFiveRandom & \RTVOIBTwoFiveRegretCalibrated & \RTVOIBTwoFiveRegretNaive \\
+\RTVOIBFourZeroBudget\% & \RTVOIBFourZeroOracle & \RTVOIBFourZeroCalibrated & \RTVOIBFourZeroNaive & \RTVOIBFourZeroRandom & \RTVOIBFourZeroRegretCalibrated & \RTVOIBFourZeroRegretNaive \\
+\RTVOIBFiveZeroBudget\% & \RTVOIBFiveZeroOracle & \RTVOIBFiveZeroCalibrated & \RTVOIBFiveZeroNaive & \RTVOIBFiveZeroRandom & \RTVOIBFiveZeroRegretCalibrated & \RTVOIBFiveZeroRegretNaive \\
+\bottomrule
+\end{tabular}
+\end{table}

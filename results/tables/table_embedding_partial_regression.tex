@@ -1,0 +1,18 @@
+\begin{table}[ht]
+\centering
+\caption{Tag-level regressions of the embedding-based answerability score (unstandardized) on the tag index with progressively added controls (HC1 standard errors).}
+\label{tab:embedding_partial_regression}
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lrrrrr}
+\toprule
+Specification & Coefficient & SE & $p$ & $R^2$ & Tags \\
+\midrule
+(1) bivariate & \RTPartOneBivariateBeta & \RTPartOneBivariateSe & \RTPartOneBivariateP & \RTPartOneBivariateRTwo & \RTPartOneBivariateN \\
+(2) + log pre-volume & \RTPartTwoLogPreVolumeBeta & \RTPartTwoLogPreVolumeSe & \RTPartTwoLogPreVolumeP & \RTPartTwoLogPreVolumeRTwo & \RTPartTwoLogPreVolumeN \\
+(3) + tag maturity & \RTPartThreeTagMaturityBeta & \RTPartThreeTagMaturitySe & \RTPartThreeTagMaturityP & \RTPartThreeTagMaturityRTwo & \RTPartThreeTagMaturityN \\
+(4) + accepted-answer rate & \RTPartFourAcceptedAnswerRateBeta & \RTPartFourAcceptedAnswerRateSe & \RTPartFourAcceptedAnswerRateP & \RTPartFourAcceptedAnswerRateRTwo & \RTPartFourAcceptedAnswerRateN \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

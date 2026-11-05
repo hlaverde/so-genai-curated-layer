@@ -1,0 +1,18 @@
+\begin{table}[!htbp]
+\centering
+\caption{Eq.~(\ref{eq:ddd}) with the substitutable label of the title-keyword classifier (baseline) and of the \texttt{all-MiniLM-L6-v2} nearest-centroid classifier, with the exemplar questions of \S\ref{sec:validation}, applied to the titles of all \RMiniLMNTitles{} unique questions of the main panel. Inference as in the main text: CR1, score bootstrap and CR3.}
+\label{tab:minilm_panel}
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lrrrrrr}
+\toprule
+Classifier and outcome & $\hat\beta_{\text{DDD}}$ & 95\% CI (CR1) & $p$ CR1 & $p$ score bootstrap & SE CR3 & $p$ CR3 \\
+\midrule
+Keywords, question volume & \RBaseB & [\RBaseLo, \RBaseHi] & \RBasePv & \RKSQPv & \RBaseCRThreeSE & \RBaseCRThreePv \\
+Keywords, funnel-qualified posts & \RFunQualB & [\RFunQualLo, \RFunQualHi] & \RFunQualPv & \RKSQualPv & \RQualCRThreeSE & \RQualCRThreePv \\
+MiniLM, question volume & \RMiniLMQB & [\RMiniLMQLo, \RMiniLMQHi] & \RMiniLMQPv & \RKSMiniLMQPv & \RMiniLMQCRThreeSE & \RMiniLMQCRThreePv \\
+MiniLM, funnel-qualified posts & \RMiniLMQualB & [\RMiniLMQualLo, \RMiniLMQualHi] & \RMiniLMQualPv & \RKSMiniLMQualPv & \RMiniLMQualCRThreeSE & \RMiniLMQualCRThreePv \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

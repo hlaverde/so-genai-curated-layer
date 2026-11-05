@@ -1,0 +1,38 @@
+\begin{table}[ht]
+\centering
+\caption{HonestDiD robust 95\% confidence sets for $\theta$, the average of the complete post-period event-study coefficients, under the relative-magnitudes restriction $\Delta^{\text{RM}}(\bar M)$ (C-LF) and the smoothness restriction $\Delta^{\text{SD}}(M)$ (FLCI), with the full cluster-robust event-study VCV. $\bar M$ bounds post-period deviations from parallel trends relative to the largest change between consecutive pre-period bins; $M$ bounds the change in the slope of the differential trend between consecutive 13-week bins. The C-LF endpoints are located on a $\theta$ grid of step \RHDThetaGridStep{}; both sets use the normal reference of the package.}
+\label{tab:honestdid}
+\small
+\begin{tabular}{rrl}
+\toprule
+\multicolumn{3}{l}{\emph{Panel A. Relative magnitudes}} \\
+\midrule
+$\bar M$ & Robust 95\% CI & Contains 0? \\
+\midrule
+\RTHDMZeroMbar & $[\RTHDMZeroLo, \RTHDMZeroHi]$ & No \\
+\RTHDMTwoFiveMbar & $[\RTHDMTwoFiveLo, \RTHDMTwoFiveHi]$ & No \\
+\RTHDMFiveZeroMbar & $[\RTHDMFiveZeroLo, \RTHDMFiveZeroHi]$ & No \\
+\RTHDMSevenFiveMbar & $[\RTHDMSevenFiveLo, \RTHDMSevenFiveHi]$ & No \\
+\RTHDMOneZeroZeroMbar & $[\RTHDMOneZeroZeroLo, \RTHDMOneZeroZeroHi]$ & Yes \\
+\RTHDMOneFiveZeroMbar & $[\RTHDMOneFiveZeroLo, \RTHDMOneFiveZeroHi]$ & Yes \\
+\RTHDMTwoZeroZeroMbar & $[\RTHDMTwoZeroZeroLo, \RTHDMTwoZeroZeroHi]$ & Yes \\
+\midrule
+\multicolumn{3}{l}{\emph{Panel B. Smoothness}} \\
+\midrule
+$M$ & Robust 95\% CI & Contains 0? \\
+\midrule
+\RTHDSDZeroM & $[\RTHDSDZeroLo, \RTHDSDZeroHi]$ & No \\
+\RTHDSDTwoFiveM & $[\RTHDSDTwoFiveLo, \RTHDSDTwoFiveHi]$ & No \\
+\RTHDSDFiveZeroM & $[\RTHDSDFiveZeroLo, \RTHDSDFiveZeroHi]$ & No \\
+\RTHDSDSevenFiveM & $[\RTHDSDSevenFiveLo, \RTHDSDSevenFiveHi]$ & Yes \\
+\RTHDSDOneZeroZeroM & $[\RTHDSDOneZeroZeroLo, \RTHDSDOneZeroZeroHi]$ & Yes \\
+\RTHDSDOneTwoFiveM & $[\RTHDSDOneTwoFiveLo, \RTHDSDOneTwoFiveHi]$ & Yes \\
+\RTHDSDOneFiveZeroM & $[\RTHDSDOneFiveZeroLo, \RTHDSDOneFiveZeroHi]$ & Yes \\
+\RTHDSDTwoZeroZeroM & $[\RTHDSDTwoZeroZeroLo, \RTHDSDTwoZeroZeroHi]$ & Yes \\
+\RTHDSDTwoFiveZeroM & $[\RTHDSDTwoFiveZeroLo, \RTHDSDTwoFiveZeroHi]$ & Yes \\
+\RTHDSDThreeZeroZeroM & $[\RTHDSDThreeZeroZeroLo, \RTHDSDThreeZeroZeroHi]$ & Yes \\
+\RTHDSDFourZeroZeroM & $[\RTHDSDFourZeroZeroLo, \RTHDSDFourZeroZeroHi]$ & Yes \\
+\RTHDSDFiveZeroZeroM & $[\RTHDSDFiveZeroZeroLo, \RTHDSDFiveZeroZeroHi]$ & Yes \\
+\bottomrule
+\end{tabular}
+\end{table}

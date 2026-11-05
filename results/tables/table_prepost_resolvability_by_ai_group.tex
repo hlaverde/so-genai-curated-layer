@@ -1,0 +1,21 @@
+\begin{table}[ht]
+\centering
+\caption{Pre/post means by tag-index group (median split of the \RNTags{} tags on the pre-ChatGPT tag index), weighted by question--tag pairs. $\Delta=\text{Post}-\text{Pre}$; DiD $=\Delta_{\text{High}}-\Delta_{\text{Low}}$.}
+\label{tab:prepost_resolvability_by_ai_group}
+\footnotesize
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Variable & Low pre & Low post & Low $\Delta$ & High pre & High post & High $\Delta$ & DiD \\
+\midrule
+Body length (chars) & \RTPPBodyLengthCharsLoPre & \RTPPBodyLengthCharsLoPost & \RTPPBodyLengthCharsLoD & \RTPPBodyLengthCharsHiPre & \RTPPBodyLengthCharsHiPost & \RTPPBodyLengthCharsHiD & \RTPPBodyLengthCharsDiD \\
+Accepted share & \RTPPAcceptedShareLoPre & \RTPPAcceptedShareLoPost & \RTPPAcceptedShareLoD & \RTPPAcceptedShareHiPre & \RTPPAcceptedShareHiPost & \RTPPAcceptedShareHiD & \RTPPAcceptedShareDiD \\
+Answered share & \RTPPAnsweredShareLoPre & \RTPPAnsweredShareLoPost & \RTPPAnsweredShareLoD & \RTPPAnsweredShareHiPre & \RTPPAnsweredShareHiPost & \RTPPAnsweredShareHiD & \RTPPAnsweredShareDiD \\
+Mean answer count & \RTPPMeanAnswerCountLoPre & \RTPPMeanAnswerCountLoPost & \RTPPMeanAnswerCountLoD & \RTPPMeanAnswerCountHiPre & \RTPPMeanAnswerCountHiPost & \RTPPMeanAnswerCountHiD & \RTPPMeanAnswerCountDiD \\
+Mean score & \RTPPMeanScoreLoPre & \RTPPMeanScoreLoPost & \RTPPMeanScoreLoD & \RTPPMeanScoreHiPre & \RTPPMeanScoreHiPost & \RTPPMeanScoreHiD & \RTPPMeanScoreDiD \\
+Closed share & \RTPPClosedShareLoPre & \RTPPClosedShareLoPost & \RTPPClosedShareLoD & \RTPPClosedShareHiPre & \RTPPClosedShareHiPost & \RTPPClosedShareHiD & \RTPPClosedShareDiD \\
+Code share & \RTPPCodeShareLoPre & \RTPPCodeShareLoPost & \RTPPCodeShareLoD & \RTPPCodeShareHiPre & \RTPPCodeShareHiPost & \RTPPCodeShareHiD & \RTPPCodeShareDiD \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

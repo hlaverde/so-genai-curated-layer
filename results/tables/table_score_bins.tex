@@ -1,0 +1,20 @@
+\begin{table}[ht]
+\centering
+\caption{Mutually exclusive score bins of funnel-qualified posts (answered, accepted, not closed, and non-negative in score). Each row re-estimates eq.~(\ref{eq:ddd}) by PPML with the bin count as the outcome; Holm $p$ adjusts for the six bins; MDE is the minimum detectable effect at 80\% power ($2.80\times$SE). Posts are question--tag pairs. $N$ is the number of cells in the estimation: tag-by-question-type series that are zero throughout the period are dropped.}
+\label{tab:score_bins}
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Bin & $\hat\beta$ & SE & $p$ & Holm $p$ & 95\% CI & MDE & Posts & $N$ \\
+\midrule
+score = 0 & \RTBinsScoreZeroBeta & \RTBinsScoreZeroSe & \RTBinsScoreZeroP & \RTBinsScoreZeroPHolm & [\RTBinsScoreZeroLo, \RTBinsScoreZeroHi] & \RTBinsScoreZeroMdeEightZero & \RTBinsScoreZeroPosts & \RTBinsScoreZeroN \\
+score = 1 & \RTBinsScoreOneBeta & \RTBinsScoreOneSe & \RTBinsScoreOneP & \RTBinsScoreOnePHolm & [\RTBinsScoreOneLo, \RTBinsScoreOneHi] & \RTBinsScoreOneMdeEightZero & \RTBinsScoreOnePosts & \RTBinsScoreOneN \\
+score = 2 & \RTBinsScoreTwoBeta & \RTBinsScoreTwoSe & \RTBinsScoreTwoP & \RTBinsScoreTwoPHolm & [\RTBinsScoreTwoLo, \RTBinsScoreTwoHi] & \RTBinsScoreTwoMdeEightZero & \RTBinsScoreTwoPosts & \RTBinsScoreTwoN \\
+score = 3 & \RTBinsScoreThreeBeta & \RTBinsScoreThreeSe & \RTBinsScoreThreeP & \RTBinsScoreThreePHolm & [\RTBinsScoreThreeLo, \RTBinsScoreThreeHi] & \RTBinsScoreThreeMdeEightZero & \RTBinsScoreThreePosts & \RTBinsScoreThreeN \\
+score = 4 & \RTBinsScoreFourBeta & \RTBinsScoreFourSe & \RTBinsScoreFourP & \RTBinsScoreFourPHolm & [\RTBinsScoreFourLo, \RTBinsScoreFourHi] & \RTBinsScoreFourMdeEightZero & \RTBinsScoreFourPosts & \RTBinsScoreFourN \\
+score $\geq$ 5 & \RTBinsScoreGeqFiveBeta & \RTBinsScoreGeqFiveSe & \RTBinsScoreGeqFiveP & \RTBinsScoreGeqFivePHolm & [\RTBinsScoreGeqFiveLo, \RTBinsScoreGeqFiveHi] & \RTBinsScoreGeqFiveMdeEightZero & \RTBinsScoreGeqFivePosts & \RTBinsScoreGeqFiveN \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

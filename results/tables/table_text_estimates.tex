@@ -1,0 +1,130 @@
+{\footnotesize
+\begin{longtable}{p{6.2cm}rrr}
+\caption{Estimates and statistics quoted in the text, in particular those that appear in no other table.  Unless stated otherwise, $\hat\beta$ is the coefficient of eq.~(\ref{eq:ddd}) by PPML with standard errors clustered by tag.}\label{tab:text_estimates} \\
+\toprule
+Statistic & Estimate & SE or 95\% CI & $p$ \\
+\midrule
+\endfirsthead
+\toprule
+Statistic & Estimate & SE or 95\% CI & $p$ \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\multicolumn{4}{l}{\emph{A. Windows and control definitions}} \\
+\midrule
+Donut (strike window dropped) & \RDonutB & \RDonutSE & \RDonutPv \\
+Window ending before the strike & \RPreStrikeB & \RPreStrikeSE & \RPreStrikePv \\
+Sole control: short code & \RSoleShortB & \RSoleShortSE & \RSoleShortPv \\
+Sole control: how-to & \RSoleHowToB & \RSoleHowToSE & \RSoleHowToPv \\
+Sole control: long code & \RSoleLongB & \RSoleLongSE & \RSoleLongPv \\
+Sole control: debugging & \RSoleDebugB & \RSoleDebugSE & \RSoleDebugPv \\
+Sole control: other conceptual & \RSoleOtherB & \RSoleOtherSE & \RSoleOtherPv \\
+Sole control: version-environment-specific & \RSoleVESB & \RSoleVESSE & \RSoleVESPv \\
+Sole control: advanced architecture & \RSoleAAB & \RSoleAASE & \RSoleAAPv \\
+Funnel-qualified, advanced architecture excluded & \RNoAAQualB & [\RNoAAQualLo, \RNoAAQualHi] & \RNoAAQualPv \\
+Version-environment-specific, AI$\times$Post (MDE \RHetVESMDE) & \RHetVESB & [\RHetVESLo, \RHetVESHi] & \RHetVESPv \\
+Advanced architecture, AI$\times$Post & \RHetAAB & [\RHetAALo, \RHetAAHi] & \RHetAAPv \\
+Short code, AI$\times$Post & \RHetShortB & \RHetShortSE & \RHetShortPv \\
+How-to, AI$\times$Post & \RHetHowToB & \RHetHowToSE & \RHetHowToPv \\
+Long code, AI$\times$Post & \RHetLongB & \RHetLongSE & \RHetLongPv \\
+Debugging, AI$\times$Post & \RHetDebugB & \RHetDebugSE & \RHetDebugPv \\
+Other conceptual, AI$\times$Post & \RHetOtherB & \RHetOtherSE & \RHetOtherPv \\
+Pre-slope quartile 2 & \RSlopeQTwoB & \RSlopeQTwoSE & \RSlopeQTwoPv \\
+Pre-slope quartile 3 & \RSlopeQThreeB & \RSlopeQThreeSE & \RSlopeQThreePv \\
+\midrule
+\multicolumn{4}{l}{\emph{B. Equality between stages and the vote margin}} \\
+\midrule
+Funnel-qualified minus questions (stacked) & \RFunEqB & [\RFunEqLo, \RFunEqHi] & \RFunEqPv \\
+Joint Wald test of the six stages, $\chi^2(\RFunJointDf)$ & \RFunJointChi & & \RFunJointPv \\
+Attenuation, $1-\beta_{\text{FQ}}/\beta_{\text{vol}}$, delta method (\%) & \RFunAtten & [\RFunAttenLo, \RFunAttenHi] &  \\
+Upvoted minus zero-score (stacked) & \RVoteDiffB & [\RVoteDiffLo, \RVoteDiffHi] & \RVoteDiffPv \\
+Upvoted posts, score bootstrap & \RVWHighB & & \RKSHighPv \\
+Weighted average of the score bins: PPML; $\log(1+Y)$ & \RPPBinsWAvg; \RLogBinsWAvg & & \\
+Funnel-qualified coefficient in $\log(1+Y)$ & \RLogFunQualB & & \\
+\midrule
+\multicolumn{4}{l}{\emph{C. Event study and trends (question volume)}} \\
+\midrule
+Event study, $T{+}0$ & \RESPostZeroB & \RESPostZeroSE & \RESPostZeroPv \\
+Event study, $T{+}1$ & \RESPostOneB & \RESPostOneSE & \RESPostOnePv \\
+Event study, $T{+}7$ & \RESPostSevenB & \RESPostSevenSE & \RESPostSevenPv \\
+Mean of the pre-period bins; post-period bins & \RESPreMean; \RESPostMean & & \\
+Joint test of the pre-period bins, $\chi^2$ & \RESPreJointChi & & \RESPreJointP \\
+Differential pre-trend per year & \RPreTrendB & \RPreTrendSE & \\
+Pre-period extrapolation, no trend & \RTrendRefB & \RTrendRefSE & \RTrendRefPv \\
+Pre-period extrapolation, linear & \RTrendLinB & \RTrendLinSE & \RTrendLinPv \\
+Pre-period extrapolation, quadratic & \RTrendQuadB & \RTrendQuadSE & \RTrendQuadPv \\
+Pre-period curvature per 13-week bin (largest absolute bound \RPreCurvBound) & \RPreCurv & [\RPreCurvLo, \RPreCurvHi] &  \\
+Raw second differences of the pre-period path, absolute value: minimum; maximum & \RPreRawDiffMin; \RPreRawDiffMax & & \\
+Linear trend fitted on the full sample & \RLinTrendB & \RLinTrendSE & \RLinTrendPv \\
+Quadratic trend fitted on the full sample & \RQuadTrendB & \RQuadTrendSE & \RQuadTrendPv \\
+Rolling placebos: number; minimum; maximum; mean & \RRollN; \RRollMin; \RRollMax; \RRollMean & & \\
+Specification curve: cells; negative; negative and significant & \RSpecN; \RSpecNeg; \RSpecNegSig & & \\
+Consecutive post-period bins in the extended event study & \RExtESNPost & & \\
+\midrule
+\multicolumn{4}{l}{\emph{D. Magnitudes}} \\
+\midrule
+10th and 90th percentiles of the tag index & \RAIPTen; \RAIPNinety & & \\
+10th to 90th percentile, question volume (\%) & \RPropQ & [\RPropQLo, \RPropQHi] &  \\
+10th to 90th percentile, funnel-qualified posts (\%) & \RPropQual & [\RPropQualLo, \RPropQualHi] &  \\
+Shortfall relative to the reference tag, question--tag pairs & \RShortQ & [\RShortQLo, \RShortQHi] &  \\
+Same, unique questions & \RShortQU & [\RShortQULo, \RShortQUHi] &  \\
+Same, funnel-qualified pairs & \RShortQual & [\RShortQualLo, \RShortQualHi] &  \\
+Same, upvoted pairs & \RShortHV & [\RShortHVLo, \RShortHVHi] &  \\
+Volume to funnel-qualified shortfall; funnel-qualified share (\%) & \RShortRatio; \RShortQualShare & & \\
+Funnel-qualified flow per year; over five years & \RQualFlowYear; \RQualFlowFiveYears & & \\
+Share of question--tag pairs in the largest tag (\%) & \RLargestTagShare & & \\
+Largest regret, tags ranked by their observed 2024 decline (\%) & \RRegretCalibMax & & \\
+\midrule
+\multicolumn{4}{l}{\emph{E. Mechanisms, monitor and measurement}} \\
+\midrule
+Post, body length (characters) & \RCompBodyChars & & \RCompBodyPv \\
+Post, accepted-answer share & \RCompAccShareB & \RCompAccShareSE & \RCompAccSharePv \\
+Post$\times$tag index, range of $p$ & \RCompAIPMin; \RCompAIPMax & & \\
+Continuous substitutability score & \RContSubB & \RContSubSE & \RContSubPv \\
+Joint model, ChatGPT cutoff & \RJointGPTB & \RJointGPTSE & \RJointGPTPv \\
+Joint model, Copilot cutoff & \RJointCopB & \RJointCopSE & \RJointCopPv \\
+Tag-level $r$, volume change and tag index & \RTagCorrR & & \RTagCorrP \\
+Monitor: AUC of the activity decline (\RMonitorBootReps{} draws over tags) & \RAUCAct & [\RAUCActLo, \RAUCActHi] &  \\
+Monitor: AUC of the VtD ratio & \RAUCVtD & [\RAUCVtDLo, \RAUCVtDHi] &  \\
+Monitor: Spearman persistence & \RPersistRho & [\RPersistRhoLo, \RPersistRhoHi] &  \\
+Share of upvoted posts in the shortfall vs its size, Spearman & \RVtDRho & & \RVtDRhoP \\
+Pooled ratio of Figure 3; tags above it; tags plotted & \RVtDTheta; \RVtDNAbove; \RVtDNTags & & \\
+Embedding score and tag index: $r$; $\rho$ & \REmbCorrR; \REmbCorrRho & & \REmbCorrP \\
+Embedding score, titles per tag: maximum; minimum; median; total & \REmbPerTagMax; \REmbPerTagMin; \REmbPerTagMedian; \REmbN & & \\
+Revealed answerability and tag index: $r$; question-level AUC & \RRevealR; \RRevealAUC & & \\
+Classifier agreement, embeddings: $\kappa$ binary; seven-way & \RKappaEmbBin; \RKappaEmbSeven & & \\
+Classifier agreement, heuristic vs embeddings: $\kappa$ range & \RKappaHeurMin; \RKappaHeurMax & & \\
+Fleiss' $\kappa$: binary; seven-way & \RFleissBin; \RFleissSeven & & \\
+All three classifiers agree (\%); questions in the sample & \RAgreeAll; \RValN & & \\
+\midrule
+\multicolumn{4}{l}{\emph{F. Descriptive statistics}} \\
+\midrule
+Weekly question--tag pairs: pre; post; change (\%) & \RWeeklyPre; \RWeeklyPost; \RWeeklyChg & & \\
+Change (\%): substitutable; non-substitutable & \RWeeklyChgSub; \RWeeklyChgNonSub & & \\
+Change (\%): first and fourth quartile of the tag index & \RQuartChgOne; \RQuartChgFour & & \\
+Funnel-qualified share of pairs (\%); upvoted and score $\geq5$ shares of them (\%) & \RFunnelSurvive; \RShareGeOne; \RShareGeFive & & \\
+Weeks: pre-period; post-period & \RNWeeksPre; \RNWeeksPost & & \\
+Questions created in 2025: collected; in complete weeks & \RNCollectedTwentyFive; \RNUniqueTwentyFive & & \\
+Tag maturity (weeks): \RMaturityTag; the other \RMaturityNOther{} tags; $z$-score of \RMaturityTag & \RMaturityWeeksTag; \RMaturityWeeksOther; \RMaturityZ & & \\
+Body-length threshold of the question types (characters) & \RClassBodyMax & & \\
+Keyword and MiniLM labels on the panel: agreement (\%); binary Cohen's $\kappa$ & \RMiniLMAgree; \RMiniLMKappa & & \\
+Leave-one-keyword-out, question volume: lowest; highest coefficient & \RLokoQMin; \RLokoQMax & & \\
+Leave-one-keyword-out, funnel-qualified posts: lowest; highest coefficient & \RLokoQualMin; \RLokoQualMax & & \\
+Selenium: pairs in the backfill; longest gap in any other tag (days) & \RSelBackfillPairs; \RSelOtherGapDays & & \\
+Selenium gap weeks dropped: volume; funnel-qualified & \RSelDropQB; \RSelDropQualB & & \\
+Selenium backfill removed: volume; funnel-qualified & \RSelNoBackQB; \RSelNoBackQualB & & \\
+Selenium tag dropped: volume; funnel-qualified & \RSelNoTagQB; \RSelNoTagQualB & & \\
+Main panel (million): question--tag pairs; unique questions & \RNPairsMainM; \RNUniqueMainM & & \\
+Question--tag pairs (million): 2020; 2024 & \RPairsTwentyTwentyM; \RPairsTwentyTwentyFourM & & \\
+Source validation, 2023-05-02: rows whose body differs & \RValBodyDiff & & \\
+Partial weeks excluded: first; last & \RDropWeekStart; \RDropWeekEnd & & \\
+Start of the tag-index window & \RIndexWinStart & & \\
+Rolling placebos: first; last cutoff & \RRollFirst; \RRollLast & & \\
+Empty cells (\%): main panel; 2025 (of \RNCellsTwentyFive{} cells) & \RCellsEmptyMain; \RCellsEmptyTwentyFive & & \\
+Source validation, 2023-05-02: API rows; SEDE rows; titles escaped & \RValAPIRows; \RValSEDERows; \RValTitleEscaped & & \\
+Descriptive trend: slope per week; $R^2$ & \RTrendSlope; \RTrendRsq & & \\
+Post-period pairs (million): counterfactual; observed; gap & \RTrendCFM; \RObsPostM; \RTrendShortM & & \\
+Break from the descriptive trend (\%) & \RTrendBreakPct & & \\
+\end{longtable}
+}

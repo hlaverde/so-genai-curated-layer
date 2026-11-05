@@ -1,0 +1,55 @@
+\begin{table}[!htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{Robustness of $\hat\beta_{\text{DDD}}$. Unless stated otherwise each row re-estimates eq.~(\ref{eq:ddd}) by PPML on the main panel with the pre-ChatGPT tag index, tag $\times$ question-type and week fixed effects, and standard errors clustered by tag (CR1).}
+\label{tab:robustness}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lrrrr}
+\toprule
+Specification & $\hat\beta_{\text{DDD}}$ & SE & $p$ & N cells \\
+\midrule
+\multicolumn{5}{l}{\textit{A. Baseline and treatment-measure variants}} \\
+  Tag index (baseline) & \RTRobBaseB & \RTRobBaseSE & \RTRobBaseP & \RTRobBaseN \\
+  Variant: z-score composite index & \RTRobZScoreCompositeB & \RTRobZScoreCompositeSE & \RTRobZScoreCompositeP & \RTRobZScoreCompositeN \\
+  Variant: PCA composite index & \RTRobPCACompositeB & \RTRobPCACompositeSE & \RTRobPCACompositeP & \RTRobPCACompositeN \\
+  Variant: quartile rank index & \RTRobQuartileRankB & \RTRobQuartileRankSE & \RTRobQuartileRankP & \RTRobQuartileRankN \\
+  Variant: tag index without tag maturity & \RTRobNoMaturityB & \RTRobNoMaturitySE & \RTRobNoMaturityP & \RTRobNoMaturityN \\
+  Embedding-based answerability score & \RTRobEmbB & \RTRobEmbSE & \RTRobEmbP & \RTRobEmbN \\
+\midrule
+\multicolumn{5}{l}{\textit{B. Control group and sample restrictions}} \\
+  Excluding advanced\_architecture cells & \RTRobNoAAB & \RTRobNoAASE & \RTRobNoAAP & \RTRobNoAAN \\
+  advanced\_architecture recoded as substitutable & \RTRobRecodeB & \RTRobRecodeSE & \RTRobRecodeP & \RTRobRecodeN \\
+  Top-50 tags by pre-period volume & \RTRobTopFiveZeroB & \RTRobTopFiveZeroSE & \RTRobTopFiveZeroP & \RTRobTopFiveZeroN \\
+  Top-75 tags by pre-period volume & \RTRobTopSevenFiveB & \RTRobTopSevenFiveSE & \RTRobTopSevenFiveP & \RTRobTopSevenFiveN \\
+  Pre-slope within one IQR of the median (77 tags) & \RTRobBandB & \RTRobBandSE & \RTRobBandP & \RTRobBandN \\
+  Pre-slope quartile 1 (steepest decline) & \RTRobSlopeQOneB & \RTRobSlopeQOneSE & \RTRobSlopeQOneP & \RTRobSlopeQOneN \\
+  Pre-slope quartile 4 (steepest growth) & \RTRobSlopeQFourB & \RTRobSlopeQFourSE & \RTRobSlopeQFourP & \RTRobSlopeQFourN \\
+  Excluding the top-1 tag by pre-period volume & \RTRobDropOneB & \RTRobDropOneSE & \RTRobDropOneP & \RTRobDropOneN \\
+  Excluding the top-5 tags by pre-period volume & \RTRobDropFiveB & \RTRobDropFiveSE & \RTRobDropFiveP & \RTRobDropFiveN \\
+  Excluding the top-10 tags by pre-period volume & \RTRobDropOneZeroB & \RTRobDropOneZeroSE & \RTRobDropOneZeroP & \RTRobDropOneZeroN \\
+  Excluding the top-20 tags by pre-period volume & \RTRobDropTwoZeroB & \RTRobDropTwoZeroSE & \RTRobDropTwoZeroP & \RTRobDropTwoZeroN \\
+\midrule
+\multicolumn{5}{l}{\textit{C. Outcomes and estimators}} \\
+  Outcome: unique users & \RTRobUsersB & \RTRobUsersSE & \RTRobUsersP & \RTRobUsersN \\
+  Fractional counts ($\sum_q 1/k_q$, $k_q$ = panel tags of question $q$) & \RTRobFracB & \RTRobFracSE & \RTRobFracP & \RTRobFracN \\
+  OLS on $\log(1+\text{questions})$ & \RTRobLogBaseB & \RTRobLogBaseSE & \RTRobLogBaseP & \RTRobLogBaseN \\
+  Two-way clustering (tag and week) & \RTRobTwoWayB & \RTRobTwoWaySE & \RTRobTwoWayP & \RTRobTwoWayN \\
+  CR3 (leave-one-tag-out jackknife) standard errors & \RTRobCRThreeB & \RTRobCRThreeSE & \RTRobCRThreeP & \RTRobCRThreeN \\
+  Kline--Santos score bootstrap (\RKSReps{} Rademacher draws, null imposed) & \RBaseB & --- & \RKSQPv & --- \\
+\midrule
+\multicolumn{5}{l}{\textit{D. Pre-period placebos (pre-ChatGPT sample)}} \\
+  Placebo cutoff 2020-05-30 & \RTRobPlacTwoZeroTwoZeroZeroFiveThreeZeroB & \RTRobPlacTwoZeroTwoZeroZeroFiveThreeZeroSE & \RTRobPlacTwoZeroTwoZeroZeroFiveThreeZeroP & \RTRobPlacTwoZeroTwoZeroZeroFiveThreeZeroN \\
+  Placebo cutoff 2020-11-30 & \RTRobPlacTwoZeroTwoZeroOneOneThreeZeroB & \RTRobPlacTwoZeroTwoZeroOneOneThreeZeroSE & \RTRobPlacTwoZeroTwoZeroOneOneThreeZeroP & \RTRobPlacTwoZeroTwoZeroOneOneThreeZeroN \\
+  Placebo cutoff 2021-05-30 & \RTRobPlacTwoZeroTwoOneZeroFiveThreeZeroB & \RTRobPlacTwoZeroTwoOneZeroFiveThreeZeroSE & \RTRobPlacTwoZeroTwoOneZeroFiveThreeZeroP & \RTRobPlacTwoZeroTwoOneZeroFiveThreeZeroN \\
+  Placebo cutoff 2021-11-30 & \RTRobPlacTwoZeroTwoOneOneOneThreeZeroB & \RTRobPlacTwoZeroTwoOneOneOneThreeZeroSE & \RTRobPlacTwoZeroTwoOneOneOneThreeZeroP & \RTRobPlacTwoZeroTwoOneOneOneThreeZeroN \\
+  Placebo cutoff 2022-05-30 & \RTRobPlacTwoZeroTwoTwoZeroFiveThreeZeroB & \RTRobPlacTwoZeroTwoTwoZeroFiveThreeZeroSE & \RTRobPlacTwoZeroTwoTwoZeroFiveThreeZeroP & \RTRobPlacTwoZeroTwoTwoZeroFiveThreeZeroN \\
+  Placebo cutoff 2022-06-21 (Copilot GA) & \RTRobPlacTwoZeroTwoTwoZeroSixTwoOneCopilotGAB & \RTRobPlacTwoZeroTwoTwoZeroSixTwoOneCopilotGASE & \RTRobPlacTwoZeroTwoTwoZeroSixTwoOneCopilotGAP & \RTRobPlacTwoZeroTwoTwoZeroSixTwoOneCopilotGAN \\
+\midrule
+\multicolumn{5}{l}{\textit{E. Joint model with ChatGPT and Copilot cutoffs}} \\
+  AI$\times$Sub$\times$Post-ChatGPT & \RTRobJointGPTB & \RTRobJointGPTSE & \RTRobJointGPTP & \RTRobJointGPTN \\
+  AI$\times$Sub$\times$Post-Copilot & \RTRobJointCopB & \RTRobJointCopSE & \RTRobJointCopP & \RTRobJointCopN \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

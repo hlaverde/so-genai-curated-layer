@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite the paper below."
+title: "Replication package: The Curated Layer Shrinks Too: Generative AI and Public Knowledge Production on Stack Overflow"
+type: software
+authors:
+  - given-names: "Henry"
+    family-names: "Laverde-Rojas"
+    affiliation: "Programa de Economía, Universidad Militar Nueva Granada, Bogotá, Colombia"
+  - given-names: "Carlos Alfonso"
+    family-names: "Laverde-Rodríguez"
+    affiliation: "Programa de Economía, Universidad Militar Nueva Granada, Bogotá, Colombia"
+version: "2.0"
+year: 2026
+url: "https://github.com/hlaverde/so-genai-curated-layer"
+license: MIT
+preferred-citation:
+  type: article
+  title: "The Curated Layer Shrinks Too: Generative AI and Public Knowledge Production on Stack Overflow"
+  authors:
+    - given-names: "Henry"
+      family-names: "Laverde-Rojas"
+      affiliation: "Programa de Economía, Universidad Militar Nueva Granada, Bogotá, Colombia"
+    - given-names: "Carlos Alfonso"
+      family-names: "Laverde-Rodríguez"
+      affiliation: "Programa de Economía, Universidad Militar Nueva Granada, Bogotá, Colombia"
+  year: 2026

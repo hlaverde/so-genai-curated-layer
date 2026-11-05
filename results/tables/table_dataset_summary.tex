@@ -1,0 +1,32 @@
+\begin{table}[ht]
+\centering
+\caption{Summary of the dataset and its construction. All quantities are derived from public sources; the unit of analysis is the tag--week--question-type cell, and weeks run Monday to Sunday.}
+\label{tab:dataset_summary}
+\small
+\begin{tabular}{ll}
+\toprule
+Component & Description \\
+\midrule
+Platform & Stack Overflow (public programming Q\&A) \\
+Sources & Stack Exchange Data Explorer (through 2023-05); \\
+        & Stack Exchange API v2.3 (from 2023-06) \\
+Main window & \RWeekFirst{} to \RMainLastDay{} (\RNWeeksMain{} complete weeks) \\
+Extension & through \RExtLastDay{} (\RNWeeksExt{} complete weeks, all \RNTags{} tags) \\
+Unit of analysis & Tag $\times$ week $\times$ question-type cell \\
+Tags & \RNTags{} top tags fixed by pre-ChatGPT volume \\
+Question--tag pairs & \RNPairsMain{} (main window) \\
+Unique questions & \RNUniqueMain{} (main window); 2025: \RNCollectedTwentyFive{} collected, \\
+        & \RNUniqueTwentyFive{} in complete weeks \\
+        & (the 2025 days of the last main-window week are in both) \\
+Panel cells & \RNCellsMain{} (main); \RNCellsExt{} (with 2025) \\
+Question types & short\_code, long\_code, how\_to, \\
+        & debugging\_simple, other\_conceptual, \\
+        & version\_environment\_specific, advanced\_architecture \\
+Main outcome & Question--tag pairs per cell (count; PPML) \\
+Main treatment & Pre-ChatGPT tag index (resolution and activity) \\
+Value measure & Net-score bins and the support-post funnel \\
+Reproducibility & Public scripts and derived data; raw content \\
+        & not redistributed (CC BY-SA 4.0) \\
+\bottomrule
+\end{tabular}
+\end{table}
